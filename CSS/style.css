@@ -38,3 +38,13 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
