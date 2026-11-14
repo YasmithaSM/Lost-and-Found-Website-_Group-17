@@ -1,0 +1,55 @@
+.search-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px; 
+}
+
+.search-section input,
+.search-section select {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.search-section inoput {
+    flex: 1;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 20px;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 15px;
+    background-color: white; 
+}
+
+.item-card img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.item-info { 
+    padding: 20px; 
+}
+
+.item-info {
+    margin-bottom: 12px;
+}
+
+.item-info p{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.search-section {
+    flex-direction: column;
+}
