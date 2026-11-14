@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost Items</title>
-    <link rel="stylesheet" href="../CSS/lost-items.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lost-items.css">
+    <title>Lost Items</title> 
 </head>
 <body>
     <header>
@@ -23,21 +24,53 @@
     </header>
 
     <div class="container">
-        <h2 class="page-title">Lost Items</h2>
-        <div class="lost-items-list">
-            <div class="lost-item">
-                <img src="lost-item1.jpg" alt="Lost Item 1">
+
+        <section class="page heading">
+            <h1>Lost Items</h1>
+            <p>Find items reported missing around your university</p>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="SearchInput" placeholder="Search for lost items...">
+            <button type="submit">Search</button>
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="accessories">Accessories</option>
+            <option value="documents">Documents</option>
+            <option value="other">Other</option>
+        </select>
+        </section>
+
+        <section class="items-grid" id="itemsContainer"> 
+
+        <div class="item-card" data-category="other">
+            <div class="item-info">
+                <img src="lost_item1.jpg" alt="Lost Item 1">
                 <h2>Black Wallet</h2>
+                <p>Category: Other</p>
                 <p>Lost on: 2026-11-01</p>
                 <p>Location: Science Canteen</p>
                 <p>Description: A black leather wallet containing ID and credit cards.</p>
             </div>
-            <div class="lost-item">
-                <img src="lost-item2.jpg" alt="Lost Item 2">
+        </div>
+
+        <div class="item-card" data-category="accessories">
+            <div class="item-info">
+                <img src="lost_item2.jpg" alt="Lost Item 2">
                 <h2>Silver watch</h2>
+                <p>Category: Accessories</p>
                 <p>Lost on: 2026-11-10</p>
                 <p>Location: CS Auditorium</p>
                 <p>Description: A silver women watch.</p>
             </div>
-            <!-- Add more lost items as needed -->
         </div>
+        </section> 
+    </div>
+   
+        <footer>
+            <p>&copy; 2026 Lost & Found Portal. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
