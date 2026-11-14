@@ -1,0 +1,400 @@
+
+/* RECENT FOUND ITEMS */
+.recent-items {
+    width: 90%;
+    max-width: 1400px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.recent-items h2 {
+    color: var(--dark-green);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.item-card {
+    background-color: #F5F0E9;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(16, 12, 13, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-8px);
+}
+
+.item-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-info h3 {
+    color: var(--dark-green);
+    margin-bottom: 12px;
+}
+
+.item-info p {
+    color: #555;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .items-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================
+   ANNOUNCEMENT BANNER
+===================================== */
+
+.announcement {
+    width: 100%;
+    background-color: var(--dark-green);
+    color: var(--beige);
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.announcement p {
+    display: inline-block;
+    padding-left: 100%;
+    font-weight: bold;
+    animation: scrollText 18s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* =====================================
+   QUICK ACCESS CARDS
+===================================== */
+
+.quick-actions {
+    width: 90%;
+    max-width: 1400px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.action-card {
+    background-color: #F5F0E9;
+    color: var(--black);
+    padding: 25px 15px;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(16, 12, 13, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(16, 12, 13, 0.15);
+}
+
+.action-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    background-color: var(--dark-green);
+    color: var(--beige);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.action-card h3 {
+    color: var(--dark-green);
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.action-card p {
+    font-size: 14px;
+}
+
+/* =====================================
+   RESPONSIVE QUICK CARDS
+===================================== */
+
+@media (max-width: 900px) {
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ACCESSIBILITY FOR MOVING ANNOUNCEMENT */
+
+@media (prefers-reduced-motion: reduce) {
+    .announcement p {
+        animation: none;
+        padding-left: 10px;
+        white-space: normal;
+    }
+}
+
+/* =====================================
+   CAMPUS LOST AND FOUND
+   COLOUR THEME
+===================================== */
+
+:root {
+    --beige: #E3DCD2;
+    --terracotta: #CC8B65;
+    --dark-green: #013328;
+    --black: #100C0D;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* =====================================
+   HEADER AND NAVIGATION
+===================================== */
+
+header {
+    background-color: var(--dark-green);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--beige);
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: var(--beige);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--terracotta);
+}
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero {
+    min-height: 420px;
+    padding: 70px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--beige);
+}
+
+/* WELCOME TEXT ANIMATION */
+
+.welcome-text {
+    color: var(--dark-green);
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: slideIn 1.2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   HERO BUTTONS
+===================================== */
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-light {
+    background-color: var(--terracotta);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--beige);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+        min-height: 350px;
+    }
+
+    .welcome-text {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .welcome-text {
+        font-size: 30px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
