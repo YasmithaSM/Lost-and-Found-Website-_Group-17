@@ -5,3 +5,36 @@
     margin: 40px auto;
     flex: 1;
 }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    color: #fff;
+    padding: 80px 40px;
+    text-align: center;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 16px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
