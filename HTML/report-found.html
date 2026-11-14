@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Found Item | Lost & Found</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>Lost & Found</h2>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="lost-items.html">Lost Items</a>
+            <a href="found-items.html">Found Items</a>
+            <a href="report-lost.html">Report Lost</a>
+            <a href="report-found.html">Report Found</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <h1>Report a Found Item</h1>
+
+        <p>
+            Found something on campus?
+            Please complete the form below to help its owner find it.
+        </p>
+
+        <!-- Found Item Form -->
+        <form action="#" method="post">
+
+            <h2>Item Information</h2>
+
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name"
+                placeholder="Enter item name" required>
+
+            <br><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="electronics">Electronics</option>
+                <option value="bags">Bags</option>
+                <option value="documents">Documents</option>
+                <option value="accessories">Accessories</option>
+                <option value="clothing">Clothing</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br><br>
+
+            <label for="description">Item Description:</label>
+            <textarea id="description" name="description"
+                placeholder="Describe the found item"
+                rows="4" required></textarea>
+
+            <br><br>
+
+            <label for="location">Found Location:</label>
+            <input type="text" id="location" name="location"
+                placeholder="Where did you find the item?" required>
+
+            <br><br>
+
+            <label for="date">Date Found:</label>
+            <input type="date" id="date" name="date" required>
+
+            <br><br>
+
+            <label for="item-image">Upload Item Image:</label>
+            <input type="file" id="item-image" name="item-image"
+                accept="image/*">
+
+            <br><br>
+
+            <h2>Contact Information</h2>
+
+            <label for="student-name">Your Name:</label>
+            <input type="text" id="student-name" name="student-name"
+                placeholder="Enter your name" required>
+
+            <br><br>
+
+            <label for="student-email">University Email:</label>
+            <input type="email" id="student-email" name="student-email"
+                placeholder="Enter your email" required>
+
+            <br><br>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone"
+                placeholder="Enter your contact number">
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Found Item</button>
+
+            <button type="reset">Clear Form</button>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lost & Found Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
