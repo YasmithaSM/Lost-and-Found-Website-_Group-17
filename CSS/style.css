@@ -84,3 +84,48 @@ nav a:hover, nav a.active {
     background-color: #e0e7ff;
     color: var(--primary);
 }
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-secondary {
+    background-color: var(--emerald);
+}
+
+.btn-secondary:hover {
+    background-color: var(--emerald-hover);
+}
+
+.btn-light {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.btn-light:hover {
+    background-color: #f8fafc;
+    color: var(--primary-hover);
+}
