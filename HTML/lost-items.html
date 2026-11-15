@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lost-items.css">
+    <title>Lost Items</title> 
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"> Lost & Found</a>
+        <nav>   
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="report-lost-item.html">Report Lost Item</a></li>
+                <li><a href="report-found-item.html">Report Found Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section class="page heading">
+            <h1>Lost Items</h1>
+            <p>Find items reported missing around your university</p>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="SearchInput" placeholder="Search for lost items...">
+            <button type="submit">Search</button>
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="accessories">Accessories</option>
+            <option value="documents">Documents</option>
+            <option value="other">Other</option>
+        </select>
+        </section>
+
+        <section class="items-grid" id="itemsContainer"> 
+
+        <div class="item-card" data-category="other">
+            <div class="item-info">
+                <img src="lost_item1.jpg" alt="Lost Item 1">
+                <h2>Black Wallet</h2>
+                <p>Category: Other</p>
+                <p>Lost on: 2026-11-01</p>
+                <p>Location: Science Canteen</p>
+                <p>Description: A black leather wallet containing ID and credit cards.</p>
+            </div>
+        </div>
+
+        <div class="item-card" data-category="accessories">
+            <div class="item-info">
+                <img src="lost_item2.jpg" alt="Lost Item 2">
+                <h2>Silver watch</h2>
+                <p>Category: Accessories</p>
+                <p>Lost on: 2026-11-10</p>
+                <p>Location: CS Auditorium</p>
+                <p>Description: A silver women watch.</p>
+            </div>
+        </div>
+        </section> 
+    </div>
+   
+        <footer>
+            <p>&copy; 2026 Lost & Found Portal. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

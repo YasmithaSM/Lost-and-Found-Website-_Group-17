@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"> Lost & Found</a>
+        <nav>   
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="report-lost-item.html">Report Lost Item</a></li>
+                <li><a href="report-found-item.html">Report Found Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="container">
+        <h1>Report Lost Item</h1>
+        <p>Tell us about the item you have lost.</p>
+     <br><br>
+
+    <form id="lostItemForm">
+
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" placeholder="Enter item name" required>
+      <br><br> 
+
+        <label for="Category">Category:</label>
+        <select id="Category" required>
+            <option value="">Select a category</option>
+            <option value="electronics">Electronics</option> 
+            <option value="accessories">Accessories</option>
+            <option value="documents">Documents</option>
+            <option value="other">Other</option>
+        </select>
+      <br><br>
+
+        <label for="dateLost">Lost On:</label>
+        <input type="date" id="dateLost" required>
+      <br><br>
+        <label for="locationLost">Location:</label>
+        <input type="text" id="locationLost" placeholder="Where did you lose it?" required>
+      <br><br>
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Provide a brief description of the item" required></textarea>
+      <br><br>
+        <label for="contactInfo">Contact Information:</label>
+        <input type="text" id="contactInfo" placeholder="Your email or phone number" required>
+      <br><br>
+        <label for="imageUpload">Upload Image (optional):</label>
+        <input type="file" id="itemimage" accept="image/*">
+      <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br><br>
+    <p id="confirmationMessage">Thank you for reporting your lost item. We will notify you if it is found.</p>
+
+</div>
+
+</body>
+</html>
