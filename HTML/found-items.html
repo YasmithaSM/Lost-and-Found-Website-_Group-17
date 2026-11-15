@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Items | Lost & Found Portal</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <a href="index.html" class="logo">Lost & Found</a>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html" class="active">Found Items</a></li>
+                <li><a href="report-lost.html">Report Lost</a></li>
+                <li><a href="report-found.html">Report Found</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="found-page">
+
+        <section class="found-heading">
+            <h1>Found Items</h1>
+            <p>Browse items found around our university campus.</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <input
+                type="text"
+                placeholder="Search for an item..."
+                aria-label="Search found items"
+            >
+
+            <button type="button">Search</button>
+        </section>
+
+        <!-- Category Section -->
+        <section class="category-section">
+            <h2>Browse by Category</h2>
+
+            <div class="category-buttons">
+                <button type="button">All Items</button>
+                <button type="button">Electronics</button>
+                <button type="button">Bags</button>
+                <button type="button">Documents</button>
+                <button type="button">Accessories</button>
+                <button type="button">Other</button>
+            </div>
+        </section>
+
+        <!-- Found Items -->
+        <section class="items-section">
+            <h2>Recently Found Items</h2>
+
+            <div class="items-container">
+
+                <div class="item-card">
+                    <div class="item-image">📱</div>
+                    <h3>Mobile Phone</h3>
+                    <p><strong>Category:</strong> Electronics</p>
+                    <p><strong>Location:</strong> University Library</p>
+                    <p><strong>Date Found:</strong> 10 November 2026</p>
+                    <button type="button">View Details</button>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">🎒</div>
+                    <h3>Black Backpack</h3>
+                    <p><strong>Category:</strong> Bags</p>
+                    <p><strong>Location:</strong> Lecture Hall</p>
+                    <p><strong>Date Found:</strong> 11 November 2026</p>
+                    <button type="button">View Details</button>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-image">📚</div>
+                    <h3>Notebook</h3>
+                    <p><strong>Category:</strong> Documents</p>
+                    <p><strong>Location:</strong> University Canteen</p>
+                    <p><strong>Date Found:</strong> 12 November 2026</p>
+                    <button type="button">View Details</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Report Found Item -->
+        <section class="report-section">
+            <h2>Found Something?</h2>
+            <p>Help another student by reporting an item you found.</p>
+            <a href="report-found.html">Report a Found Item</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lost & Found Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
