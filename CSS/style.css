@@ -1,3 +1,383 @@
+
+/* =================================
+   REPORT FOUND ITEM PAGE
+================================= */
+
+.report-found-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+.report-found-heading {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 35px;
+    background: linear-gradient(135deg, #013328, #245C4B);
+    color: white;
+    border-radius: 18px;
+}
+
+.report-found-heading h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.report-found-heading p {
+    color: #E3DCD2;
+    font-size: 16px;
+}
+
+.report-found-form {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: #F5F0E9;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.report-found-form h2 {
+    color: #013328;
+    font-size: 23px;
+    margin: 10px 0 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #CC8B65;
+}
+
+.report-found-form label {
+    display: block;
+    color: #013328;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.report-found-form input,
+.report-found-form select,
+.report-found-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 22px;
+    border: 1px solid #D0C6B9;
+    border-radius: 9px;
+    background: white;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.report-found-form input:focus,
+.report-found-form select:focus,
+.report-found-form textarea:focus {
+    outline: none;
+    border-color: #CC8B65;
+    box-shadow: 0 0 0 3px rgba(204, 139, 101, 0.15);
+}
+
+.report-found-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.report-found-form input[type="file"] {
+    padding: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #013328;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-buttons button:hover {
+    background: #CC8B65;
+    transform: translateY(-3px);
+}
+
+.form-buttons button[type="reset"] {
+    background: #CC8B65;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background: #A96C4C;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+    .report-found-page {
+        width: 94%;
+    }
+
+    .report-found-heading h1 {
+        font-size: 28px;
+    }
+
+    .report-found-form {
+        padding: 22px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}
+
+/* =====================================
+   FOUND ITEMS PAGE
+===================================== */
+
+/* Main Page */
+.found-page {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Page Heading */
+.found-heading {
+    text-align: center;
+    padding: 55px 20px;
+    margin-bottom: 35px;
+    background: linear-gradient(135deg, #013328, #245C4B);
+    border-radius: 18px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.found-heading h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.found-heading p {
+    font-size: 17px;
+    color: #E3DCD2;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 750px;
+    margin: 35px auto 50px;
+}
+
+.search-section input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #E3DCD2;
+    border-radius: 30px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-section input:focus {
+    border-color: #CC8B65;
+}
+
+.search-section button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #013328;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #CC8B65;
+}
+
+/* Category Section */
+.category-section {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.category-section h2,
+.items-section h2 {
+    color: #013328;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category-buttons button {
+    padding: 11px 23px;
+    border: 1px solid #CC8B65;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    color: #013328;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-buttons button:hover {
+    background-color: #013328;
+    color: #FFFFFF;
+}
+
+/* Found Items Section */
+.items-section {
+    margin-bottom: 60px;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Item Cards */
+.item-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: #F5F0E9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Item Image */
+.item-image {
+    width: 95px;
+    height: 125px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3DCD2;
+    border-radius: 12px;
+    font-size: 42px;
+}
+
+/* Item Information */
+.item-card h3 {
+    color: #013328;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.item-card p {
+    color: #555555;
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+/* View Details Button */
+.item-card button {
+    margin-top: 10px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #CC8B65;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item-card button:hover {
+    background-color: #013328;
+}
+
+/* Report Found Section */
+.report-section {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #E3DCD2;
+    border-radius: 18px;
+    margin-bottom: 30px;
+}
+
+.report-section h2 {
+    color: #013328;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.report-section p {
+    color: #555555;
+    margin-bottom: 22px;
+}
+
+.report-section a {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #013328;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.report-section a:hover {
+    background-color: #CC8B65;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .found-heading h1 {
+        font-size: 32px;
+    }
+
+    .items-container {
+        grid-template-columns: 1fr;
+    }
+
+    .item-card {
+        align-items: center;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-section input,
+    .search-section button {
+        width: 100%;
+    }
+}
+
 /* Faded Campus Building Image */
 
 .hero {
