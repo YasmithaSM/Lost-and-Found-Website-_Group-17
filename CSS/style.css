@@ -1023,3 +1023,182 @@ footer {
         font-size: 32px;
     }
 }
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f5f0;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#013328;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+}
+
+.logo{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#CC8B65;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.container h1{
+    color:#013328;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.container p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-weight:bold;
+    color:#013328;
+    margin-bottom:8px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    margin-bottom:20px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#CC8B65;
+}
+
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* File Upload */
+
+input[type="file"]{
+    border:none;
+    padding:5px 0;
+}
+
+/* Button */
+
+button{
+    background:#013328;
+    color:white;
+    border:none;
+    padding:14px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#CC8B65;
+}
+
+/* Confirmation Message */
+
+#confirmationMessage{
+    display:none;
+    background:#d4edda;
+    color:#155724;
+    padding:15px;
+    border-radius:8px;
+    margin-top:20px;
+    text-align:center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    .container{
+        width:95%;
+        padding:25px;
+    }
+
+    .container h1{
+        font-size:30px;
+    }
+}
