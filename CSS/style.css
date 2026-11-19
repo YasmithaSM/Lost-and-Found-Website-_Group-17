@@ -2,7 +2,9 @@
 /* =================================
    REPORT FOUND ITEM PAGE
 ================================= */
-
+body{
+    background:red;
+}
 .report-found-page {
     width: 90%;
     max-width: 1100px;
