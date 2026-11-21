@@ -846,11 +846,13 @@ body {
 /* Page Heading */
 .page-heading {
     text-align: center;
+    padding: 55px 20px;
+    margin-bottom: 35px;
     background: linear-gradient(135deg, #013328, #245C4B);
-    color: white;
-    padding: 50px 20px;
-    border-radius: 15px;
-    margin-bottom: 40px;
+    border-radius: 18px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
 }
 
 .page-heading h1 {
