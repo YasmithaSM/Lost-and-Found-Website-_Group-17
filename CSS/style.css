@@ -846,24 +846,26 @@ body {
 /* Page Heading */
 .page-heading {
     text-align: center;
-    padding: 55px 20px;
+    padding: 10px;
     margin-bottom: 35px;
     background: linear-gradient(135deg, #013328, #245C4B);
     border-radius: 18px;
-    color: #FFFFFF;
+    color: white;
     position: relative;
     overflow: hidden;
 }
 
 .page-heading h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 40px;     
+    color:white !important;
 }
 
 .page-heading p {
     margin-top: 10px;
     font-size: 18px;
-    color: #E3DCD2;
+    color: white !important;
+
 }
 
 /* Search Section */
@@ -1092,9 +1094,14 @@ nav ul li a:hover{
 }
 
 .container h1{
-    color:#013328;
-    text-align:center;
-    margin-bottom:10px;
+   text-align: center;
+    padding: 55px 20px;
+    margin-bottom: 35px;
+    background: linear-gradient(135deg, #013328, #245C4B);
+    border-radius: 18px;
+    color: white;
+    position: relative;
+    overflow: hidden;
 }
 
 .container p{
