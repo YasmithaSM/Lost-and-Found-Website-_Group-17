@@ -825,3 +825,45 @@ footer {
         transition: none !important;
     }
 }
+.hero-image {
+    margin-left: auto;
+    text-align: right;
+    
+}
+
+.hero-image img {
+    width: 600px;
+    height: auto;
+    display: block;
+}
+/* Index Page Only */
+.index-page {
+    background-color: #F4F7F5;
+}
+
+.index-page .hero {
+    background: linear-gradient(
+        135deg,
+        #00574F,
+        #087F72
+    );
+    color: white;
+}
+
+.index-page .hero-content h1 {
+    color: #FFF5D6;
+}
+
+.index-page .hero-content p {
+    color: #F1F5F3;
+}
+
+.index-page .btn-report {
+    background-color: #F4B942;
+    color: #003D38;
+}
+
+.index-page .btn-browse {
+    background-color: #FFFFFF;
+    color: #00574F;
+}
