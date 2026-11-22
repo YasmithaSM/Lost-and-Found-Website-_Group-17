@@ -825,7 +825,7 @@ footer {
         transition: none !important;
     }
 }
-/* ==========================
+
    LOST ITEMS PAGE
 
 body {
@@ -1062,8 +1062,6 @@ body{
     color:#333;
 }
 
-/* =========================
-   HEADER
 
 header{
     background:#013328;
@@ -1097,8 +1095,7 @@ nav ul li a:hover{
     color:#CC8B65;
 }
 
-/* =========================
-   FORM CONTAINER
+   
 
 .container{
     width:90%;
@@ -1127,8 +1124,8 @@ nav ul li a:hover{
     margin-bottom:25px;
 }
 
-/* =========================
-   FORM
+
+  
 
 form{
     display:flex;
@@ -1201,14 +1198,13 @@ button:hover{
     text-align:center;
 }
 
-/* =========================
-   RESPONSIVE
+   
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     header{
         flex-direction:column;
-        padding:20px;
+        padding : 20px;
     }
 
     nav ul{
@@ -1224,5 +1220,94 @@ button:hover{
 
     .container h1{
         font-size:30px;
+    }
+}
+/* =====================================
+   FULL-WIDTH HERO OVERRIDE (INDEX PAGE)
+===================================== */
+
+.index-page .hero {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    min-height: 480px;
+    padding: 70px 8% 40px;
+    background: linear-gradient(135deg, #0b3b36 0%, #1d6368 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.index-page .hero-content {
+    max-width: 580px;
+    z-index: 2;
+}
+
+/* Remove the dark green box behind h1 */
+.index-page .hero-content h1 {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 0 16px 0 !important;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-align: left !important;
+    border-radius: 0;
+}
+
+.index-page .hero-content p {
+    color: #e3dcd2 !important;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 28px 0 !important;
+    text-align: left !important;
+}
+
+.index-page .hero-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+/* Pin the illustration cleanly to the bottom-right */
+.index-page .hero-image {
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    width: 380px;
+    max-width: 42%;
+    margin: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.index-page .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+    .index-page .hero {
+        flex-direction: column;
+        padding: 50px 6% 240px;
+    }
+
+    .index-page .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .index-page .hero-image {
+        width: 280px;
+        max-width: 75%;
+        right: 50%;
+        transform: translateX(50%);
     }
 }
