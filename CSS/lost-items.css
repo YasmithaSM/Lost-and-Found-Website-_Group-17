@@ -1,55 +1,398 @@
+
+/* =====================================
+   REPORT LOST ITEM PAGE
+===================================== */
+
+.report-lost-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+/* Page Heading */
+
+.report-lost-container h1 {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #013328, #245C4B);
+    color: white;
+    border-radius: 18px;
+    font-size: 38px;
+}
+
+/* Introduction */
+
+.report-lost-container > p:not(#confirmationMessage) {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Form Container */
+
+#lostItemForm {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: #F5F0E9;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* Labels */
+
+#lostItemForm label {
+    display: block;
+    color: #013328;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+
+#lostItemForm input,
+#lostItemForm select,
+#lostItemForm textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 22px;
+    border: 1px solid #D0C6B9;
+    border-radius: 9px;
+    background: white;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+
+#lostItemForm input:focus,
+#lostItemForm select:focus,
+#lostItemForm textarea:focus {
+    outline: none;
+    border-color: #CC8B65;
+    box-shadow: 0 0 0 3px rgba(204, 139, 101, 0.15);
+}
+
+/* Textarea */
+
+#lostItemForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Image Upload */
+
+#lostItemForm input[type="file"] {
+    padding: 10px;
+}
+
+/* Submit Button */
+
+#lostItemForm button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #013328;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#lostItemForm button:hover {
+    background: #CC8B65;
+    transform: translateY(-3px);
+}
+
+/* Confirmation Message */
+
+#confirmationMessage {
+    display: none;
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding: 15px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .report-lost-container {
+        width: 94%;
+    }
+
+    .report-lost-container h1 {
+        font-size: 28px;
+    }
+
+    #lostItemForm {
+        padding: 22px;
+    }
+}
+
+/* =====================================
+   LOST ITEMS PAGE
+===================================== */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--beige, #E3DCD2);
+    color: var(--black, #100C0D);
+    line-height: 1.6;
+}
+
+/* =====================================
+   HEADER AND NAVIGATION
+===================================== */
+
+header {
+    background-color: #013328;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #E3DCD2;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #E3DCD2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #CC8B65;
+}
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+
+/* =====================================
+   PAGE HEADING
+===================================== */
+
+.page-heading {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    background: linear-gradient(135deg, #013328, #245C4B);
+    border-radius: 18px;
+    color: white;
+}
+
+.page-heading h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.page-heading p {
+    font-size: 17px;
+    color: #E3DCD2;
+}
+
+/* =====================================
+   SEARCH SECTION
+===================================== */
+
 .search-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 40px;
 }
 
 .search-section input,
 .search-section select {
     flex: 1;
-    padding: 13px;
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    background-color: white;
+    padding: 13px 15px;
+    border: 2px solid #E3DCD2;
+    border-radius: 25px;
+    background: white;
+    font-size: 15px;
+    outline: none;
 }
 
-.search-section input {
-    flex: 1;
+.search-section input:focus,
+.search-section select:focus {
+    border-color: #CC8B65;
 }
+
+.search-section button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 25px;
+    background: #013328;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-section button:hover {
+    background: #CC8B65;
+}
+
+/* =====================================
+   ITEMS GRID
+===================================== */
 
 .items-grid {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
 }
+
+/* Item Card */
 
 .item-card {
-    border: 1px solid #ddd;
-    border-radius: 7px;
+    background: white;
+    border-radius: 15px;
     padding: 15px;
-    background-color: white; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
 }
 
-.item-card img {
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
+.item-card:hover {
+    transform: translateY(-7px);
 }
 
-.item-info { 
-    padding: 20px; 
-}
+/* Item Information */
 
 .item-info {
+    padding: 0;
+    margin: 0;
+}
+
+.item-info img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 12px;
 }
 
-.item-info p{
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #666;
+.item-info h2 {
+    color: #013328;
+    font-size: 21px;
+    margin-bottom: 12px;
 }
 
-.search-section {
-    flex-direction: column;
+.item-info p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #013328;
+    color: #E3DCD2;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 850px) {
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-section input,
+    .search-section select,
+    .search-section button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 30px;
+    }
 }
