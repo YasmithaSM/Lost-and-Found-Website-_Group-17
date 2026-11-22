@@ -49,6 +49,69 @@ nav ul li a:hover,
 nav ul li a.active {
     color: #CC8B65;
 }
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--beige, #E3DCD2);
+    color: var(--black, #100C0D);
+    line-height: 1.6;
+}
+
+/* =====================================
+   HEADER AND NAVIGATION
+===================================== */
+
+header {
+    background-color: #013328;
+    padding: 20px 5%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #E3DCD2;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+     width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #E3DCD2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #CC8B65;
+}
 
 /* Main Container */
 .container {
